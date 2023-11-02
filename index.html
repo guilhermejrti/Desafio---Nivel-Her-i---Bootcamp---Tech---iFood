@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Nível de Herói</title>
+  <link rel="stylesheet" href="css/style.css">
+  
+
+</head>
+<body>
+<!-- Template HTML com modificações realizadas, obtido através da plataforma CodePen.io -->
+<div class="card">
+  <form>
+    <input type="text" id="nome" placeholder="Informe seu nome">
+    <input type="text" id="xp" placeholder="Informe sua XP obtida">
+    <button onclick="verificarNivel()">Verificar Nível</button>
+  </form>
+  <br>
+
+</div>
+
+</body>
+
+<script>
+
+
+  function verificarNivel(){
+  let nome = document.getElementById("nome").value;
+  let xp = document.getElementById("xp").value;
+
+  var classificação = "Classificação";
+
+
+
+
+
+if(xp<=1000){
+  classificação = "Ferro";
+} else if (xp>=1001 && xp<=2000){
+  classificação = "Bronze";
+} else if (xp>=2001 && xp<=5000){
+  classificação = "Prata";
+} else if (xp>=6001 && xp<=7000){
+  classificação = "Ouro";
+} else if (xp>=7001 && xp<=8000){
+  classificação = "Platina";
+} else if (xp>=8001 && xp<=9000){
+  classificação = "Ascendente";
+} else if (xp>=9001 && xp<=10000){
+  classificação = "Imortal";
+} else if (xp>=10000){
+  classificação = "Radiante";
+}
+
+var nivel = classificação;
+
+switch (nivel){
+
+  case "Ferro":
+  alert("O Herói de nome " + nome + " está no nível de " + nivel)
+  break;
+  case "Bronze":
+  alert("O Herói de nome " + nome + " está no nível de " + nivel)
+  break;
+  case "Prata":
+  alert("O Herói de nome " + nome + " está no nível de " + nivel)
+  break;
+  case "Platina":
+  alert("O Herói de nome " + nome + " está no nível de " + nivel)
+  break;
+  case "Ascendente":
+  alert("O Herói de nome " + nome + " está no nível de " + nivel)
+  break;
+  case "Imortal":
+  alert("O Herói de nome " + nome + " está no nível de " + nivel)
+  break;
+  case "Radiante":
+  alert("O Herói de nome " + nome + " está no nível de " + nivel)
+  break;
+
+  
+}
+
+};
+
+//O DESAFIO TEM UM INTERVALO DA XP DE 5001-6000 que não está definido.
+
+</script>
+
+</html>
